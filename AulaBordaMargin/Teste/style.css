@@ -1,0 +1,18 @@
+@charset "UTF-08";
+
+body{
+    background-color: rgb(238, 231, 221);
+}
+
+.card {
+    padding: 20px;
+    padding-top: 1px;
+    margin: 300px;
+    background-color: rgb(253, 238, 187);
+    box-shadow: 4px 4px 5px rgb(238, 79, 79);
+   display: inline-block;
+}
+
+h1 {
+    background-color: rgb(248, 188, 169);
+}

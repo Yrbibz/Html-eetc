@@ -1,0 +1,50 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 10px;
+    background-color: #f8f4f4;
+    font-family: Arial, sans-serif;
+}
+ 
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh; 
+}
+ 
+.logo {
+    width: 272px; 
+    margin-bottom: 30px;
+}
+ 
+.search-bar {
+    width: 400px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #dcdcdc;
+    border-radius: 24px;
+}
+ 
+.buttons {
+    margin-top: 20px;
+}
+ 
+.button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e6eef7;
+    cursor: crosshair;
+    font-size: 14px;
+}
+ 
+.button:hover {
+    box-shadow: 2px 2px 4px gray;
+    
+}
