@@ -1,0 +1,93 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+#bold {
+    text-decoration: solid;
+}
+
+.texto {
+    color: rgb(245, 245, 245);
+    background-color: rgb(153, 153, 153);
+    display: inline-block;
+    padding: 10px;
+    margin-right: -4px;
+}
+
+.titulo {
+    color: rgb(245, 245, 245);
+    background-color: rgb(135, 153, 172);
+    text-decoration: underline;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.titulo:hover{
+    background-color:rgb(245, 245, 245);
+    color: rgb(0, 0, 0)
+}
+
+#cabecalho {
+    height: 100px;
+    background-color: rgb(122, 139, 156);
+    width: 800px;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+#menu {
+
+    padding-left: 5px;
+}
+
+p:hover {
+    background-color: rgb(245, 245, 245);
+    color:  rgb(153, 153, 153);
+}
+
+#main {
+    background-color: rgb(153, 153, 153);
+    height: 400px;
+    width: 820px;
+    margin: auto;
+}
+
+#menulateral {
+    width: 200px;
+    background-color: rgb(156, 155, 155);
+    display: inline-block;
+    height: 100%;
+}
+
+#corpo {
+    background-color:rgb(156, 155, 155);
+    display: inline-block;
+}
+
+.imagem{
+    width: 590px;
+    height: 120px;
+    background-color:  rgb(122, 122, 122);
+    margin: 10px;
+}
+
+.imagem:hover{
+    background-color:rgb(245, 245, 245);
+}
+
+#rodape {
+    width: 820px;
+    height: 50px;
+    margin: auto;
+    background-color: rgb(0, 0, 0);
+    margin-top: -4px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#rodape:hover{
+    background-color:  rgb(153, 153, 153);
+}
