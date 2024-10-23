@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Jacques+Francois&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&family=Jacques+Francois&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Libre Baskerville', serif; 
+}
+
+body {
+    background-color: #413C3C;
+    color: #fff;
+}
+
+
+header {
+    background-color: #413C3C;
+    padding: 20px;
+    box-shadow: 2px 2px 5px black;
+}
+
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #ffffff; 
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #F9A825; 
+}
+
+.aqui{
+    color:#F9A825;
+}
+
+h2{
+    color: #FF6F00;
+    font-family: "Jacques Francois", serif;
+    font-size: 50px;
+    display: flex;
+    
+}
+
+h1{
+    color:#FF6F00;
+    font-family: "Inspiration", cursive;
+    font-size: 150px;
+    display: flex;
+}
+
+.titulo{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+  
+}
+
+.logo {
+    position: absolute; 
+    z-index: -1; 
+    width: 30%; 
+    height: auto; 
+    opacity: 0.2; 
+}
+
