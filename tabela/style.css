@@ -1,0 +1,67 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: rgb(109, 30, 89);
+}
+
+table{
+    margin: auto;
+    width: 450px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(236, 163, 208);
+    border-radius: 5px;
+}
+
+td{
+    border: 2px solid rgba(236, 163, 208);
+    border-radius: 9px;
+    height: 50px;
+    width: 100px;
+    background-color: rgba(236, 163, 208);
+    color: rgb(0, 0, 0);
+}
+ 
+td:hover{
+    background-color: rgb(243, 212, 234);
+}
+
+.off{
+    background-color: rgb(131, 5, 5);
+}
+
+.off:hover{
+    background-color: rgb(255, 38, 0);
+}
+ 
+.separado{
+    background-color: rgb(176, 113, 182);
+}
+ 
+.nn{
+    background-color: rgb(132, 61, 141);
+}
+
+#nada:hover{
+    background-color: rgba(236, 163, 208);
+ 
+}
+
+input{
+    border: 0px;
+    font-size: 2em;
+    font-weight: bold;
+    background-color: rgba(236, 163, 208);
+    color: rgb(0, 0, 0);
+    height: 100%;
+    width: 100%;
+    text-align: right;
+}
+ 
+.vazio{
+    background-color: rgba(236, 163, 208);
+    border: none;
+}
