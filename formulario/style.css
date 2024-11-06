@@ -1,7 +1,15 @@
 @charset "UTF-8";
 
 body{
-    background-color: rgb(109, 152, 172);
+    background-color: rgb(72, 57, 102);
+}
+
+h1{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 200px;
 }
 
 form{
@@ -10,7 +18,8 @@ form{
     left: 50%;
     transform: translate(-50%, -50%);
     width: 500px;
-    background-color:white;
+    background-color:rgb(247, 244, 219);
+    border-radius: 2%;
     }
 
 
