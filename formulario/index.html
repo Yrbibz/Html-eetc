@@ -61,9 +61,32 @@
 
                 <label for="icor">SUA cor mágica:</label>
                 <input type="color" name="cor" id="icor" value="000000">
-
-                
             </fieldset>
+
+            <fieldset>
+                <legend>Outros </legend>
+                <label class="outros" for="imes"> Meses:</label>
+                <input type="month" name="mes" id="imes" value="2024-11"><br>
+                
+                <label class="outros" for="irange">Satisfação:</label>
+                <input type="range" name="range" id="irange" min="0" max="10" value="5" oninput="valor.innerHTML = Number(inivel.value)">
+                <output id="valor">5</output> <br>
+
+                <label for="ianimais">Animais:</label>
+                <select name="animais" id="ianimais">
+                    <option value="" selected>** Escolha **</option>
+
+                    <optgroup label="Marinhos">
+                        <option value="peixe">Peixe</option>
+                        <option value="lula">Lula</option>
+                        <option value="tubarão">Tubarão</option>
+                        <option value="orca">Orca</option>
+                    </optgroup>
+               
+            </fieldset>
+        
+            <input type="submit">
+            <input type="reset" value="Limpar">
     </form>
 </body>
 </html>
