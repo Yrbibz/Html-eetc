@@ -41,3 +41,15 @@ iframe#tela{
     width: 269px;
     height: 471px;
 }
+
+section#redes {
+    text-align: right;
+}
+
+section#redes img{
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.400);
+}
+
