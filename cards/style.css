@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&family=Jacques+Francois&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Roboto+Slab:wght@100..900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: rgb(37, 20, 39);
+}
+
+.conteiner{
+    background-color: rgb(37, 20, 39);
+    display: flex;
+    flex-flow: row wrap; 
+    
+}
+
+.quadrados {
+    background-color: rgb(131, 108, 131);
+    border: 1px solid rgb(0, 0, 0);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    width: 180px;
+    height: 200px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.quadrados:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); 
+}
+
+.imagem-container {
+    position: relative;
+    width: 100%;
+    height: 200px; 
+    overflow: hidden;
+    transition: height 0.3s ease-in-out;
+}
+
+.imagem-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.imagem-container .texto {
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8); 
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 10px; /* Tamanho da fonte ajustado */
+    line-height: 1.5;
+    box-sizing: border-box;
+    transition: top 0.3s ease-in-out;
+    
+}
+
+.imagem-container:hover .texto {
+    top: 80%; 
+    font-family: "Jacques Francois", serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.ordem1 { order: 1; }
+.ordem2 { order: 2; }
+.ordem3 { order: 3; }
+.ordem4 { order: 4; }
+.ordem5 { order: 5; }
+.ordem6 { order: 6; }
+.ordem7 { order: 7; }
+.ordem8 { order: 8; }
+
+/*
