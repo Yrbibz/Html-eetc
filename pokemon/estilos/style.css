@@ -6,6 +6,7 @@
 body{
     background: url(imgFundo.jpg)  ;
     background-color: #252525;
+    
 }
 
 main{
@@ -14,6 +15,7 @@ main{
     padding-top: 5px;
     max-width: 100%;
     text-align: justify;
+    height: 110%;
 }
 
 p{
@@ -81,6 +83,7 @@ H1 {
 
 h2{
     color: rgb(124, 35, 35);
+    text-align: center;
 }
 
 .textoInicio {
@@ -90,8 +93,6 @@ h2{
     
 }
 
-
-
 .acessos {
     display: flex;
     justify-content: space-evenly;
@@ -99,8 +100,6 @@ h2{
     gap: 10px; 
     padding: 5px;
 }
-
-
 
 .acessos a {
     color:  rgb(212, 212, 212);
@@ -119,4 +118,91 @@ h2{
     padding:0%;
     text-align: center;
     font-size: 150%;
+}
+
+
+/*forms*/
+form {
+    background-color: #581818;
+    padding: 20px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    align-items: center;
+
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+}
+
+
+legend {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+label {
+    display: block;
+    font-size: 0.9em;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+
+.inputpessoais,
+textarea,
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+    color: #333;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.inputpessoais:focus,
+textarea:focus,
+input[type="file"]:focus {
+    border-color: #7c0d0d;
+    outline: none;
+}
+
+textarea {
+    resize: none;
+    height: 80px;
+}
+
+#button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #581818;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+}
+
+#button:hover {
+    background-color: #c98b8b;
+}
+
+@media (max-width: 480px) {
+    form {
+        padding: 15px;
+    }
+    legend {
+        font-size: 1.2em;
+    }
 }

@@ -16,7 +16,36 @@
         </div>
  </header>
     <main>
-
+        <form>
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <div>
+                    <label for="inome">Nome: </label>
+                    <input class="inputpessoais" type="text" name="nome" id="inome" required maxlength="50" 
+                        placeholder="Digite seu nome completo" autocomplete="name">  
+                </div>
+                <div>
+                    <label for="iemail">E-mail:</label>
+                    <input class="inputpessoais" type="email" name="email" id="iemail" required 
+                        placeholder="Digite seu e-mail" autocomplete="email">
+                </div>
+                <div>
+                    <label for="itelefone">Telefone:</label>
+                    <input class="inputpessoais" type="tel" name="telefone" id="itelefone" required 
+                        pattern="^\(\d{2}\)\d{4,5}-\d{4}$" placeholder="(xx)xxxxx-xxxx" autocomplete="tel"> 
+                </div>
+                <div>
+                    <label for="iarquivos">Nos mande uma foto!</label>
+                    <input type="file" name="arquivos" id="iarquivos" accept="image/*">
+                </div>
+                <div>
+                    <label for="irelato">Escreva seu relato:</label>
+                    <textarea class="inputpessoais" name="relato" id="irelato" required maxlength="300" 
+                        placeholder="Escreva aqui seu relato" autocomplete="relato"></textarea>
+                </div>
+            </fieldset>
+            <input type="submit" id="button">
+        </form>
     </main>
 </body>
 </html>
