@@ -1,0 +1,28 @@
+* {
+    margin:0%;
+    padding: 0%;
+}
+
+.header{
+    background-color: rgb(37, 36, 39);
+   
+}
+
+.camionhos a{
+    color: rgb(247, 242, 235);
+    text-decoration: none; 
+}
+
+.aqui{
+    color:rgb(137, 133, 138);
+}
+
+.caminhos{
+        display: flex;               
+        justify-content:space-around;   
+        align-items: center;        
+        color: rgb(247, 242, 235);          
+        padding: 15px;
+         
+}
+
