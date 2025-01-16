@@ -2,8 +2,7 @@
 
 *{ 
     margin: 0;
-    padding: 0;
-    overflow: hidden; 
+    padding: 0; 
 }
 
 header {
@@ -22,33 +21,58 @@ h1{
     font-family: "Public Sans", serif;
 }
 
+h3{
+  font-size: 2em;
+}
+
 .bloco1 {
     display: flex; 
-    justify-content: space-around; 
-    align-items: flex-start; 
-    gap: 50px; 
-    padding: 20px; 
-    border: 1px solid #000000; 
-    padding-top: 50px;
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column;
+    gap: 20px; 
+    padding: 50px;  
+    padding-top: 70px;
+  
   }
   
-  .texto1 {
-    flex: 1; 
-    font-size: 1em;
+  .texto1, .texto2 {
+    flex: none; 
+    font-size: 1.2em;
     font-family: "Public Sans", serif;
+    text-align: center;
+    padding: 300px;
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
   
-  .imagem1 {
-    flex: 1; 
+  .imagem1 { 
     text-align: center; 
   }
   
   .imagem1 img {
-    max-width: 100%; 
+    max-width: 70%; 
+    max-height: 500px;
     height: auto; 
+    border-radius: 5%;
+    box-shadow: 5px 5px 4px black;
   }
+
+  /*.bloco2*/
+
+
   
- 
+ footer{
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  position: fixed; 
+  bottom: 0; 
+  width: 100%; 
+  text-align: center; 
+  padding: 12px 0; 
+  /*z-index: 1000; /* Garante que fique acima de outros elementos */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5);
+ }
 
 
 
