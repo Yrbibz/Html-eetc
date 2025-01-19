@@ -5,74 +5,103 @@
     padding: 0; 
 }
 
+body{
+  background-color:  rgb(34, 28, 59);
+}
+
+
 header {
-    background-color: rgb(0, 0, 0); 
-    padding: 30px; 
+    background-color:  rgb(34, 28, 59);
+    padding: 15px; 
     box-shadow: 2px 2px 5px rgb(0, 0, 0);
     display: flex; 
     list-style: none; 
-    justify-content: center; 
+    justify-content: space-between; 
     align-items: center;
-   
 }
+
+.search-input{
+  border-radius: 13px;
+  outline: none;
+  padding: 6px;
+  width:25%;
+}
+
 
 h1{
     color:rgb(255, 255, 255);
     font-family: "Public Sans", serif;
+    margin-left: 15%;
 }
 
-h3{
-  font-size: 2em;
+.inicial{
+  background-image: url(img/espaco.jpg);
+  height: 930px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
 }
 
-.bloco1 {
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    flex-direction: column;
-    gap: 20px; 
-    padding: 50px;  
-    padding-top: 70px;
-  
-  }
-  
-  .texto1, .texto2 {
-    flex: none; 
-    font-size: 1.2em;
-    font-family: "Public Sans", serif;
-    text-align: center;
-    padding: 300px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-  }
-  
-  .imagem1 { 
-    text-align: center; 
-  }
-  
-  .imagem1 img {
-    max-width: 70%; 
-    max-height: 500px;
-    height: auto; 
-    border-radius: 5%;
-    box-shadow: 5px 5px 4px black;
-  }
+h2{
+  color:aliceblue;
+  font-family: "Public Sans", serif;
+  font-size: 3em;
+}
 
-  /*.bloco2*/
-
-
+.botao{
+  background-color: rgb(34, 28, 59) ;
+  padding: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 15px;
+  color:aliceblue;
+  font-family: "Public Sans", serif;
   
- footer{
-  background-color: #000000;
-  color: rgb(255, 255, 255);
-  position: fixed; 
-  bottom: 0; 
-  width: 100%; 
-  text-align: center; 
-  padding: 12px 0; 
-  /*z-index: 1000; /* Garante que fique acima de outros elementos */
-  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5);
- }
+}
+
+p{
+  color: aliceblue;
+  font-family: "Public Sans", serif;
+  width: 70%;
+  font-size: 110%;
+}
+
+.bloco1{
+  padding: 100px;
+  padding-top: 50px;
+  display: flex;
+  padding-bottom: 25px;
+}
+
+.bloco1 img{
+  width: 500px;
+  height: 300px;
+  border-radius: 5%;
+}
+
+.texto{
+  display: flex;
+  flex-direction: column;
+}
+
+.bloco2 {
+  padding: 100px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  background-color: rgb(39, 19, 51);
+}
+
+footer{
+  background-color: black;
+  font-family:"Public Sans", serif;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: aliceblue;
+}
 
 
 
