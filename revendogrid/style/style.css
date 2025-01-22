@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Inspiration&family=Jacques+Francois&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Roboto+Slab:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(/revendogrid/style/imgs/fundo.jpg);
+}
+
+header{
+    padding: 5px;
+    background-color: rgb(238, 209, 245);
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    gap: 20px;
+}
+
+.search-input{
+    border-radius: 13px;
+    outline: none;
+    padding: 6px;
+    width:15%;
+  }
+
+.container{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: grid;
+    grid-template-columns: repeat(3, 320px);
+    gap: 10px;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.item1, .item2, .item3, .item4, .item5, .item6, .item7, .item8, .item9, .item10,.item11,.item12{
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+     gap: 12px;
+}
+
+.item1:hover,.item2:hover,.item3:hover,.item4:hover,.item5:hover,.item6:hover,.item7:hover,.item8:hover,.item9:hover,.item10:hover,.item11:hover,.item12:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); 
+}
+
+.item1{background-color: rgb(241, 209, 64);}
+.item2{background-color: rgb(189, 166, 134);}
+.item3{background-color: rgb(193, 140, 214);}
+.item4{background-color: rgb(92, 48, 134);}
+.item5{background-color: rgb(139, 53, 53);}
+.item6{background-color: rgb(42, 150, 108);}
+.item7{background-color: rgb(85, 128, 65);}
+.item8{background-color: rgb(141, 38, 20);}
+.item9{background-color: rgb(156, 35, 35);}
+.item10{background-color: rgb(58, 107, 172);}
+.item11{background-color: rgb(94, 45, 139);}
+.item12{background-color: rgb(48, 17, 121);}
+
+img{
+    width: 300px;
+    height: 300px;
+}
+
+p{
+    font-family: "Roboto Slab", serif;
+}
+
+footer{
+    padding: 10px;
+    background-color: rgb(238, 209, 245);
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr; 
+        gap: 15px; 
+    }
+
+    img {
+        max-width: 90%; 
+    }
+}
