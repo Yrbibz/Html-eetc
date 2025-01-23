@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC</title>
+</head>
+<body>
+    <script>
+        let peso = parseFloat(window.prompt("Qual seu peso?"));
+        let altura = parseFloat(window.prompt("Qual sua altura?"));
+        imc= peso/(altura*altura)
+        imc = imc.toFixed(2);
+        alert(imc)
+    </script>
+</body>
+</html>
