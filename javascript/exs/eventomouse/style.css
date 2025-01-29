@@ -1,0 +1,27 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{ 
+    width: 100%;
+    background-color: pink;
+}
+
+main{
+    width: 500px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+div{
+    color: rgb(70, 26, 114);
+    padding-top: 10px;
+    margin: 0px;
+    width: 20%;
+    height: 100px;
+    margin-right: -4px;
+    display: inline-block;
+    background-color: rgb(240, 191, 229);
+    text-align: center;
+}

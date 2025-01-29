@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div id="div1">1</div>
+        <div id="div2" onclick="clicar()" onmouseenter="ent2()" onmouseout="sair2()">2</div>
+        <div id="div3" onclick="clicar()" onmouseenter="ent3()" onmouseout="sair3()">3</div>
+        <div id="div4" onclick="clicar()" onmouseenter="ent4()" onmouseout="sair4()">4</div>
+        <div id="div5" onclick="clicar()" onmouseenter="ent5()" onmouseout="sair5()">5</div>
+        <div id="div6" onclick="clicar()" onmouseenter="ent6()" onmouseout="sair6()">6</div>
+        <div id="div7" onclick="clicar()" onmouseenter="ent7()" onmouseout="sair7()">7</div>
+        <div id="div8" onclick="clicar()" onmouseenter="ent8()" onmouseout="sair8()">8</div>
+        <div id="div9" onclick="clicar()" onmouseenter="ent9()" onmouseout="sair9()">9</div>
+        <div id="div10" onclick="clicar()" onmouseenter="ent10()" onmouseout="sair10()">10</div>
+    </main>
+    <script>
+        var a = window.document.getElementById('div1')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+
+        function clicar(){
+            a.innerText= 'Clicou'
+            a.style.background = 'purple'
+        }
+        function entrar(){
+            a.innerText='entrou'
+        }
+        function sair(){
+            a.innerText= 'saiu'
+            a.style.background = 'green'
+        }
+
+        var b = window.document.getElementById('div2')
+        var c = window.document.getElementById('div3')
+        var d = window.document.getElementById('div4')
+        var e = window.document.getElementById('div5')
+        var f = window.document.getElementById('div6')
+        var g = window.document.getElementById('div7')
+        var h = window.document.getElementById('div8')
+        var i = window.document.getElementById('div9')
+        var j = window.document.getElementById('div10')
+        
+
+        function clicar(){
+        a.innerText = 'Clicou'
+        b.innerText = 'Clicou'
+        c.innerText = 'Clicou'
+        d.innerText = 'Clicou'
+        e.innerText = 'Clicou'
+        f.innerText = 'Clicou'
+        g.innerText = 'Clicou'
+        h.innerText = 'Clicou'
+        i.innerText = 'Clicou'
+        j.innerText = 'Clicou'
+        }
+
+        function ent1(){  
+        a.style.backgroundColor = 'pink'
+        a.style.color = 'green'
+        }
+        function ent2(){  
+        b.style.backgroundColor = 'pink'
+        b.style.color = 'green'
+        }
+        function ent3(){  
+        c.style.backgroundColor = 'pink'
+        c.style.color = 'green'
+        }
+        function ent4(){  
+        d.style.backgroundColor = 'pink'
+        d.style.color = 'green'
+        }
+        function ent5(){  
+        e.style.backgroundColor = 'pink'
+        e.style.color = 'green'
+        }
+        function ent6(){  
+        f.style.backgroundColor = 'pink'
+        f.style.color = 'green'
+        }
+        function ent7(){  
+        g.style.backgroundColor = 'pink'
+        g.style.color = 'green'
+        }
+        function ent8(){  
+        h.style.backgroundColor = 'pink'
+        h.style.color = 'green'
+        }
+        function ent9(){  
+        i.style.backgroundColor = 'pink'
+        i.style.color = 'green'
+        }
+        function ent10(){  
+        j.style.backgroundColor = 'pink'
+        j.style.color = 'green'
+        }
+              
+        function sair1(){
+        a.style.backgroundColor = 'black'
+        }
+        function sair2(){
+        b.style.backgroundColor = 'black'
+        }
+        function sair3(){
+        c.style.backgroundColor = 'black'
+        }
+        function sair4(){
+        d.style.backgroundColor = 'black'
+        }
+        function sair5(){
+        e.style.backgroundColor = 'black'
+        }
+        function sair6(){
+        f.style.backgroundColor = 'black'
+        }
+        function sair7(){
+        g.style.backgroundColor = 'black'
+        }
+        function sair8(){
+        h.style.backgroundColor = 'black'
+        }
+        function sair9(){
+        i.style.backgroundColor = 'black'
+        }
+        function sair10(){
+        j.style.backgroundColor = 'black'
+        }
+    </script>
+</body>
+</html>
