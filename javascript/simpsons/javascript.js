@@ -1,57 +1,48 @@
 function verificar() {
-    let inputData = document.getElementById("data").value;
+    let data = document.getElementById("data").value;
     let img = document.getElementById("imagem"); 
     let resp = document.getElementById("resp"); 
 
-    if (!inputData) { 
+    if (!data) { 
         alert("Por favor, insira sua data de nascimento.");
         return;
     }
 
-    let dataNascimento = new Date(inputData); 
-    let anoNascimento = dataNascimento.getFullYear(); 
-    let anoAtual = new Date().getFullYear(); 
-    let idade = anoAtual - anoNascimento; 
-    let genero = document.querySelector('input[name="sexo"]:checked').id; 
+    let dataNascimento = new Date(data);
+    let hoje = new Date();
+    let idade = hoje.getFullYear() - dataNascimento.getFullYear();
+    let mes = hoje.getMonth() - dataNascimento.getMonth();
+    let dia = hoje.getDate() - dataNascimento.getDate();
+
+    
+    if (mes < 0 || (mes === 0 && dia < 0)) {
+        idade--;
+    }
+
+    let generoRadio = document.querySelector('input[name="sexo"]:checked');
+    let genero = generoRadio ? generoRadio.id : null; 
+
+    let imagemSrc = "";
+    let mensagem = "";
 
     if (idade <= 2) {
-        if (genero === "sfem") {
-            img.src = "imgs/maggie.jpg"; 
-        } else {
-            img.src = "imgs/bebe.jpg"; 
-        }
-        img.style.display = "block"; 
-        resp.innerText = "Você é bebê!";
+        imagemSrc = genero === "sfem" ? "imgs/maggie.jpg" : "imgs/bebe.jpg";
+        mensagem = "Você é um bebê!";
     } else if (idade >= 3 && idade <= 13) {
-        if (genero === "sfem") {
-            img.src = "imgs/lisa.jpg"; 
-        } else {
-            img.src = "imgs/bart.jpg"; 
-        }
-        resp.innerText = "Você é criança!";
+        imagemSrc = genero === "sfem" ? "imgs/lisa.jpg" : "imgs/bart.jpg";
+        mensagem = "Você é uma criança!";
     } else if (idade >= 14 && idade <= 17) {
-        if (genero === "sfem") {
-            img.src = "imgs/shauna.webp"; 
-        } else {
-            img.src = "imgs/jimbo.png"; 
-        }
-        resp.innerText = "Você é adolescente!";
+        imagemSrc = genero === "sfem" ? "imgs/shauna.jpg" : "imgs/jimbo.png";
+        mensagem = "Você é um adolescente!";
     } else if (idade >= 18 && idade <= 59) {
-        if (genero === "sfem") {
-            img.src = "imgs/marge.jpg"; 
-        } else {
-            img.src = "imgs/homer.jpg"; 
-        }
-        resp.innerText = "Você é adulto!";
-    } else if (idade >= 60) {
-        if (genero === "sfem") {
-            img.src = "imgs/veia.jpg"; 
-        } else {
-            img.src = "imgs/abe.jpg"; 
-        }
-        resp.innerText = "Você é idoso!";
+        imagemSrc = genero === "sfem" ? "imgs/marge.jpg" : "imgs/homer.jpg";
+        mensagem = "Você é um adulto!";
+    } else {
+        imagemSrc = genero === "sfem" ? "imgs/veia.jpg" : "imgs/abe.jpg";
+        mensagem = "Você é um idoso!";
     }
-    
 
+    img.src = imagemSrc;
+    img.style.display = "block";
+    resp.innerText = mensagem;
 }
-

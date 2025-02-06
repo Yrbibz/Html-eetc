@@ -10,18 +10,18 @@ function carregar() {
 
     if (hora >= 6 && hora < 12) {
         horas.innerText += " - Bom dia!";
-        img.src = 'estilo/manha.jpg'
-        corpo.style.background = "#F6DABE"
-    
+        img.src = 'manha.jpg';
+        corpo.style.background = "#F6DABE";
     }
-    else if(hora >=13 && hora <=18){
-        horas.innerText += " - Boa Tarde!";
-        img.src = "estilo/tarde.jpg"
+    else if (hora >= 12 && hora < 18) { 
+        img.src ="tarde.jpg";
         corpo.style.background = "#E67B3C"; 
     }
     else {
         horas.innerText += " - Boa noite!";
-        img.src = "estilo/noite.jpg"
+        img.src = "noite.jpg";
         corpo.style.background = "#373C7C"; 
     }
+
+   
 }
