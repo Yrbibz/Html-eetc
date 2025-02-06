@@ -43,7 +43,7 @@ function verificar() {
             img.src = "imgs/homer.jpg"; 
         }
         resp.innerText = "Você é adulto!";
-    } else if (idade >= 60 &&) {
+    } else if (idade >= 60) {
         if (genero === "sfem") {
             img.src = "imgs/veia.jpg"; 
         } else {
