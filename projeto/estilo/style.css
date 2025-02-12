@@ -1,28 +1,115 @@
-header {
-    background-color: #f5d4f0;
-    padding: 10px;
-    box-shadow: 2px 2px 5px black;
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
 }
-nav ul {
+
+body{
+    background-image: url(imgs/papel\ de\ parede\ bigorna.jpg);
+}
+
+#container{
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    display: flex;
+    background-color: lightgray;
+    text-align: center;
+    padding: 10px;
+    font-family: "Aldrich", serif;
+    font-size: 30px;
+    box-shadow: 2px 2px 20px black;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo{
+    padding: 5px;
+    width: 50px;
+}
+
+#conteudo{
+    margin: auto;
+    margin-top: 20px;
+    padding: 13px;
+    background-color: white;
+    width: 70vw;
+}
+
+#banner{
+    display: block;
+    background-image: url(imgs/bigorna.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;
+}
+
+#menuConteudo{
+    display: flex;
+    margin-top: 10px;
+    background-color: #E25822;
+    height: 50px;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 25px;
+    font-family: "Aldrich", serif;
+}
+
+.textoMenu{
+    text-decoration: none;
+    color: black;
+}
+
+.textoMenu:hover{
+    transform: translate(2px, -3px);
+}
+
+#fundoCards{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#cards{
     display: flex;
     justify-content: center;
-    list-style: none;
+    background-color: rgba(226, 88, 34, 0.1);
+    border-radius: 5px;
+    width: 18vw;
+    height: 50vh;
+    margin-top: 10px;
+    margin: 15px;
 }
 
-nav ul li {
-    margin: 0 20px;
+.imgCards{
+    margin-top: 10px;
+    width: 80%;
+    height: 50%;
 }
 
-nav ul li a {
-    color: #ffffff; 
-    text-decoration: none;
-    font-size: 18px;
-}
 
-nav ul li a:hover {
-    color: #3d3f5c; 
-}
 
-.aqui{
-    color:#f9258f;
+
+
+
+/*#menuLateral{
+display: flex;
+background-color: lightgray;
+box-shadow: 2px 8px 20px 1px black;
+width: 11vw;
+height: 100vh;
+position: fixed;
+left: -20vh;
+transition: transform 1.2s ease;
 }
+    
+#menuLateral:hover{
+background-color: gray;
+transition: translate(20vw,0vh);
+transform: translateX(9.7vw);
+box-shadow: 2px 8px 20px 1px #E25822;
+}*/
