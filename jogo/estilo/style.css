@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-image: url(../imgs/deserto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#cabecalho{
+    display: flex;
+    justify-content: center;
+    margin-top: 26px;
+    font-size: 41px;
+    font-family: "Bangers", serif;
+}
+
+#conteudo{
+    margin: auto;
+    width: 100%;
+    height: 91vh;
+}
+
+.papaleguas{
+    width: 50px;
+    height: 50px;
+}

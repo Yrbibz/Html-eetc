@@ -1,0 +1,36 @@
+var altura = 0;
+var largura = 0;
+
+function ajustarPalco() {
+    //Guardando valores de altura e largura da tela
+    altura = window.innerHeight;
+    largura = window.innerWidth;
+    console.log(largura, altura);
+
+}
+
+ajustarPalco();
+
+function posRandomica(){
+    //Randomizando posição do papaleguas na tela
+    var posx = Math.floor(Math.random() * largura)-100;
+    var posy = Math.floor(Math.random() * altura)-100;
+
+    //Validador para que não tenha posições negativas
+    posx = posx < 0 ? 0 : posx;
+    posx = posy < 0 ? 0 : posy;
+    console.log(posx, posy);
+
+    //Criando o elemento na tela
+    var papaleguas = document.createElement('img');
+    papaleguas.src = "imgs/papaleguas.png";
+
+    //Inserindo elemento na tela
+    document.body.appendChild(papaleguas);
+
+
+    papaleguas.className = 'papaleguas';
+    papaleguas.style.left = `${posx}px`;
+    papaleguas.style.top = `${posy}px`;
+    papaleguas.style.position = 'absolute';
+}
