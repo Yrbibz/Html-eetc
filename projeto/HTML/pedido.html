@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Staatliches&display=swap');
+    </style>
+    <link rel="stylesheet" href="../estilo/style.css">
+    <title> BigBig.com</title>
+
+</head>
+
+<body>
+    <header id="cabecalho">
+        <img id="logo" src="../estilo/imgs/logoBigorna.png" alt="Bigorna">
+        BigBig
+    </header>
+    <main>
+        <form>
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <div>
+                    <label for="inome">Nome: </label>
+                    <input class="inputpessoais" type="text" name="nome" id="inome" required maxlength="50" 
+                        placeholder="Digite seu nome completo" autocomplete="name">  
+                </div><br>
+                <div>
+                    <label for="iemail">E-mail:</label>
+                    <input class="inputpessoais" type="email" name="email" id="iemail" required 
+                        placeholder="Digite seu e-mail" autocomplete="email">
+                </div><br>
+                <div>
+                    <label for="itelefone">Telefone:</label>
+                    <input class="inputpessoais" type="tel" name="telefone" id="itelefone" required 
+                        pattern="^\(\d{2}\)\d{4,5}-\d{4}$" placeholder="(xx)xxxxx-xxxx" autocomplete="tel"> 
+                </div><br>
+                <div>
+                    <label for="iarquivos">Nos mande uma foto!</label>
+                    <input type="file" name="arquivos" id="iarquivos" accept="image/*">
+                </div><BR>
+                <div>
+                    <label for="irelato">Escreva seu Pedido</label>
+                    <textarea class="inputpessoais" name="relato" id="irelato" required maxlength="300" 
+                        placeholder="Escreva aqui seu pedido" autocomplete="relato"></textarea>
+                </div>
+            </fieldset>
+            <input type="submit" id="button">
+        </form>
+    </main>

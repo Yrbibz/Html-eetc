@@ -50,7 +50,7 @@ header {
 #menuConteudo{
     display: flex;
     margin-top: 10px;
-    background-color: #E25822;
+    background-color: #ec923d;
     height: 50px;
     justify-content: space-around;
     align-items: center;
@@ -77,12 +77,13 @@ header {
 #cards{
     display: flex;
     justify-content: center;
-    background-color: rgba(226, 88, 34, 0.1);
+    background-color: rgba(231, 108, 59, 0.1);
     border-radius: 5px;
     width: 18vw;
     height: 50vh;
     margin-top: 10px;
     margin: 15px;
+    flex-wrap: wrap;
 }
 
 .imgCards{
@@ -91,7 +92,9 @@ header {
     height: 50%;
 }
 
-
+#cards:hover{
+    transform: scale(1.05);
+}
 
 
 
