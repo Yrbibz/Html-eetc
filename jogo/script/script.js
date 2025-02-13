@@ -34,3 +34,8 @@ function posRandomica(){
     papaleguas.style.top = `${posy}px`;
     papaleguas.style.position = 'absolute';
 }
+
+function tamanhoPapaleguas(){
+    var classe=Math.random()*3;
+    console.log(classe);
+}
