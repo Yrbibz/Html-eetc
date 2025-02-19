@@ -19,19 +19,48 @@ body{
     font-family: "Bangers", serif;
 }
 
-#conteudo{
-    margin: auto;
-    width: 100%;
-    height: 91vh;
-}
-
-.papaleguas{
+.pl1{
     width: 50px;
     height: 50px;
 }
 
+.pl2{
+    width: 70px;
+    height: 70px;
+}
 
 .pl3{
-    width: 90px;
-    height: 90px;
+    width: 100px;
+    height: 100px;
+}
+
+.ladoA{
+    transform:scaleX(1);
+}
+
+.ladoB{
+    transform:scaleX(-1);
+}
+
+.painel{
+    position: absolute;
+    flex-wrap: wrap;
+    flex-flow: row;
+    width: 230px;
+    padding:10px;
+    left:0px;
+    bottom:0px;
+    border-top: solid 2px #000000;
+    background-color: #fff;
+    opacity: 0.6;
+}
+
+.vidas{
+    float:left;
+}
+
+.cronometro{
+    float: left;
+    font-size: 20PX;
+    font-weight: bold;                                      
 }
